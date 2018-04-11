@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <!--<item-->
+        <!--android:id="@+id/all_users"-->
+        <!--android:icon="@android:drawable/ic_dialog_info"-->
+        <!--android:title="@string/all_users" />-->
+    <item
+        android:id="@+id/so"
+        android:icon="@android:drawable/ic_menu_revert"
+        android:title="@string/signout" />
+    <item
+        android:id="@+id/nav_fav"
+        android:icon="@android:drawable/star_off"
+        android:title="@string/fav"
+        app:showAsAction="withText" />
+    <!--<item-->
+        <!--android:id="@+id/seting"-->
+        <!--android:icon="@android:drawable/ic_menu_manage"-->
+        <!--android:title="@string/setting"-->
+        <!--app:showAsAction="withText" />-->
+    <group >
+        <item
+            android:id="@+id/share_app"
+            android:icon="@drawable/ic_menu_share"
+            android:title="@string/share" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@android:drawable/ic_menu_help"
+            android:title="@string/about"
+            app:showAsAction="withText" />
+        <item
+            android:id="@+id/nav_apps"
+            android:icon="@android:drawable/stat_notify_sync"
+            android:title="@string/myApps" />
+    </group>
+
+
+</menu>

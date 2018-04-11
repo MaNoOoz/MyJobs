@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/note_card"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_margin="1dp"
+    android:background="@android:color/darker_gray"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@color/grey_700">
+
+
+    <TextView
+        android:id="@+id/user_name_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="14dp"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Note Title"
+        android:textColor="@color/amber_50"
+        android:textStyle="bold" />
+
+    <!--<de.hdodenhof.circleimageview.CircleImageView-->
+        <!--android:id="@+id/profile_image2"-->
+        <!--android:layout_width="50dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:src="@drawable/google"-->
+        <!--app:civ_border_color="@color/amber_50"-->
+        <!--app:civ_border_width="1dp" />-->
+
+    <TextView
+        android:id="@+id/user_name_row"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/user_name_status"
+        android:layout_centerVertical="true"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text="Note Desc"
+        android:textColor="@color/amber_50"
+        android:textSize="24sp"
+        android:textStyle="normal" />
+</RelativeLayout>

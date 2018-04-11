@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">وظائفي</string>
+    <string name="app_name_short">وظائفي</string>
+    <string name="tap1">بحث</string>
+    <string name="tap2">المفضلة</string>
+    <string name="copylink">إضافة إلى المفضلة</string>
+    <string name="action_settings">إعدادات</string>
+    <string name="Show_Url">إظهار الرابط</string>
+    <string name="Hide_Url">إخفاء الرابط</string>
+    <string name="Hide_But">إخفاء المواقع</string>
+    <string name="dialog_add_title">إضافة رابط جديد</string>
+    <string name="dialog_edit_title">تعديل</string>
+    <string name="signout">تسجيل الخروج</string>
+    <string name="fav">المفضلة</string>
+    <string name="setting">إعدادات</string>
+    <string name="share">مشاركة التطبيق</string>
+    <string name="about">حول</string>
+    <string name="myApps">تطبيقاتي</string>
+    <string name="action_search">بحث</string>
+    <string name="Refresh">Refresh</string>
+    <string name="Forword">Forword</string>
+
+    <string name="JobTitle">العنوان</string>
+    <string name="jobDesc">الرابط</string>
+    <string name="createacount">حساب جديد</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="logout"> تسجيل الخروج</string>
+    <string name="Register">تسجيل</string>
+    <string name="Name">الإسم</string>
+    <string name="Email">الإيميل</string>
+    <string name="Password">كلمةالمرور</string>
+
+</resources>

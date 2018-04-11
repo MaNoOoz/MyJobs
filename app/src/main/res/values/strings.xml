@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name"> My Jobs</string>
+    <string name="app_name_short">My Jobs</string>
+    <string name="tap1"> Search</string>
+    <string name="tap2"> My Links</string>
+    <string name="tap3" translatable="false"> MyMap</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+    <string name="copylink"> Add To My Links </string>
+    <string name="action_settings">Settings</string>
+    <string name="Show_Url">Show Url</string>
+    <string name="Hide_Url">Hide Url</string>
+    <string name="Hide_But">Hide Buttons</string>
+    <string name="dialog_add_title">Add New Title</string>
+    <string name="dialog_edit_title">Edit Title</string>
+    <string name="default_name" translatable="false">Display Name</string>
+    <string name="default_status" translatable="false">Hi am Online</string>
+    <string name="all_users" translatable="false">All Users</string>
+    <string name="signout">SignOut</string>
+    <string name="fav">Favorite</string>
+    <string name="setting">Setting</string>
+    <string name="share">Share</string>
+    <string name="action_search">search</string>
+    <string name="about">About</string>
+    <string name="myApps">My Apps</string>
+    <string name="Refresh">Refresh</string>
+    <string name="Forword">Forword</string>
+    <string name="JobTitle">Job Title</string>
+    <string name="jobDesc">Job Desc</string>
+    <string name="createacount">Create Acount</string>
+    <string name="login">Log in</string>
+    <string name="logout">Log Out</string>
+    <string name="Register">Register</string>
+    <string name="Name">Name</string>
+    <string name="Email">Email</string>
+    <string name="Password">Password</string>
+    <string name="back" translatable="false">Back</string>
+
+    <string name="info" translatable="false">info</string>
+    <string name="title_activity_maps">Map</string>
+
+
+</resources>

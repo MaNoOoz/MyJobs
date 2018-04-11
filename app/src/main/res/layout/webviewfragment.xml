@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    <LinearLayout
+        android:id="@+id/viewgrub"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/butonsView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/views"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:animationCache="true"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="3dp"
+                android:scrollbars="horizontal"
+                android:visibility="visible"
+                tools:layout_editor_absoluteX="0dp">
+
+                <Button
+                    android:id="@+id/glassdoor"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/glassdoor"
+                    android:elevation="1dp"
+                    android:fadeScrollbars="false"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/bayt"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bayt"
+                    android:elevation="1dp"
+                    android:fadeScrollbars="false"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/ngulf"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/gg"
+                    android:elevation="0dp"
+                    android:fadeScrollbars="false"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/mihiti"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/mihniti"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/indeed"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/indeed"
+
+                    android:elevation="1dp"
+                    android:fadeScrollbars="false"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/linkedin"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/linkeds"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/google"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/google"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textAllCaps="false" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+
+            <WebView
+                android:id="@+id/wv1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_weight="1"
+                android:visibility="visible">
+
+
+            </WebView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_weight="4"
+                        android:backgroundTint="@color/amber_50"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:scrollbars="none"
+                        android:text="Back"
+                        android:textAllCaps="false"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/forword"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_weight="4"
+                        android:backgroundTint="@color/amber_50"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:scrollbars="none"
+                        android:text="Forword"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/refresh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_weight="4"
+                        android:backgroundTint="@color/amber_50"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:scrollbars="none"
+                        android:text="Refresh"
+                        android:textStyle="bold" />
+
+
+                    <Button
+                        android:id="@+id/go"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_weight="4"
+                        android:backgroundTint="@color/amber_50"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:scrollbars="none"
+                        android:text="Go"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <android.support.v7.widget.ContentFrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ProgressBar
+                            android:id="@+id/progressBar"
+                            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+
+                            android:layout_weight="2"
+                            ads:layout_constraintBottom_toBottomOf="parent"
+                            ads:layout_constraintEnd_toEndOf="parent"
+                            ads:layout_constraintTop_toTopOf="parent"
+                            ads:layout_constraintVertical_bias="1.0" />
+
+                        <EditText
+                            android:id="@+id/editText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:maxLines="2"
+                            android:textColor="@color/amber_100"
+                            android:visibility="invisible" />
+
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.ContentFrameLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

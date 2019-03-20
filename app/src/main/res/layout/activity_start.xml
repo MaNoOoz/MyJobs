@@ -1,148 +1,118 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:theme="@style/AppTheme.NoActionBar"
-    tools:context=".StartActivity">
+    android:background="@color/background"
+    tools:layout_editor_absoluteY="25dp">
 
 
-    <RelativeLayout
-        android:id="@+id/relativeLayout"
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="50sp"
+        android:fontFamily="@font/cairo_semibold"
+        android:gravity="center"
+        android:text="تطبيق المراقبين"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textColor="@color/green_800"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img"
         android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:padding="10dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/mothneb" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img">
 
-        >
-
-        <TextView
-            android:id="@+id/textView3"
-            android:paddingBottom="5dp"
-            android:padding="5dp"
+        <Button
+            android:id="@+id/startBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:background="@color/dark_purple_800"
-            android:text="@string/app_name"
-            android:textAlignment="center"
-            android:textColor="@color/amber_500"
-            android:textSize="30sp"
-            android:textStyle="bold" />
-    </RelativeLayout>
+            android:layout_gravity="center"
+            android:layout_margin="0dp"
+            android:backgroundTint="@color/green_800"
+            android:fontFamily="@font/cairo_semibold"
+            android:gravity="center"
+            android:padding="0dp"
+            android:text="تصفح"
+            android:textColor="@color/amber_50"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/relativeLayout"
-        android:layout_margin="20dp">
+        <Button
+            android:id="@+id/mBtnCreate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="@color/green_800"
+            android:fontFamily="@font/cairo_semibold"
+            android:gravity="center"
+            android:padding="0dp"
+            android:text="إنشاء مستخدم"
+            android:textColor="@color/amber_50"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/mBtnLogin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent" />
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginTop="7dp"
-            android:orientation="vertical"
-            android:paddingTop="20dp">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:layout_marginBottom="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_weight="1"
-                android:gravity="fill">
-
-                <ImageView
-                    android:id="@+id/img"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true"
-                    android:layout_alignParentEnd="true"
-                    app:srcCompat="@drawable/search" />
-            </RelativeLayout>
-
-            <Button
-                android:id="@+id/createA"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/loginA"
-                android:layout_margin="10dp"
-                android:background="@drawable/my_btn_tow"
-                android:text="@string/createacount"
-                android:textAlignment="center"
-                android:textAllCaps="false"
-                android:textColor="@color/amber_50"
-                android:textStyle="bold" />
-
-            <Button
-                android:id="@+id/loginA"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/textView3"
-                android:layout_centerHorizontal="true"
-                android:layout_margin="10dp"
-                android:background="@drawable/mubtn"
-                android:text="@string/login"
-                android:textAlignment="center"
-                android:textAllCaps="false"
-                android:textColor="@color/amber_50"
-                android:textStyle="bold" />
-
-            <!--<LinearLayout-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_margin="5dp"-->
-            <!--android:orientation="horizontal">-->
+        <Button
+            android:id="@+id/mBtnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="@color/green_800"
+            android:fontFamily="@font/cairo_semibold"
+            android:gravity="center"
+            android:padding="0dp"
+            android:text="تسجيل الدخول"
+            android:textColor="@color/amber_50"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/startBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent" />
+    </LinearLayout>
 
 
-            <!--<com.google.android.gms.common.SignInButton-->
-            <!--android:id="@+id/sign_in_button"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_centerHorizontal="true"-->
-            <!--android:layout_margin="5dp"-->
-            <!--android:layout_weight="1" />-->
-
-            <!--<Button-->
-            <!--android:id="@+id/button3"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_margin="5dp"-->
-            <!--android:layout_weight="1"-->
-            <!--android:text="Button" />-->
-
-            <!--<Button-->
-            <!--android:id="@+id/button2"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_margin="5dp"-->
-            <!--android:layout_weight="1"-->
-            <!--android:text="Button" />-->
-            <!--</LinearLayout>-->
-
-            <!--<RelativeLayout-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_margin="5dp"-->
-            <!--android:background="@color/dark_purple_500">-->
-
-            <!--<Button-->
-            <!--android:id="@+id/skip"-->
-            <!--style="@style/Widget.AppCompat.Button.Borderless"-->
-            <!--android:layout_width="50dp"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:text="Skip"-->
-            <!--android:textAlignment="center"-->
-            <!--android:textAllCaps="false"-->
-            <!--android:textColor="@color/amber_50"-->
-            <!--/>-->
-
-            <!--</RelativeLayout>-->
-
-
-        </LinearLayout>
-    </RelativeLayout>
-
-
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

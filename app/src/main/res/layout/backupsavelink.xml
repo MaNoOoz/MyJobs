@@ -36,7 +36,7 @@
 
             <!-- Floating action button that launches AddTaskActivity when clicked -->
 
-            <android.support.design.widget.FloatingActionButton
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:id="@+id/fab"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -69,7 +69,7 @@
     <!--android:layout_width="match_parent"-->
     <!--android:layout_height="wrap_content"-->
     <!--android:text="Add Note"-->
-    <!--android:textColor="@color/actionbar_background"-->
+    <!--="@color/actionbar_background"-->
     <!--android:textStyle="bold" />-->
 
 

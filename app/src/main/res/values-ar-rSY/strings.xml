@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">وظائفي</string>
-    <string name="app_name_short">وظائفي</string>
+    <string name="app_name">تطبيق المراقبين</string>
+    <string name="app_name_short">تطبيق المراقبين</string>
     <string name="tap1">بحث</string>
     <string name="tap2">المفضلة</string>
     <string name="copylink">إضافة إلى المفضلة</string>

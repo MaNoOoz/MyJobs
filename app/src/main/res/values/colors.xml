@@ -33,7 +33,7 @@
     <color name="amber_A200">#ffd740</color>
     <color name="amber_A400">#ffc400</color>
     <color name="amber_A700">#ffab00</color>
-    <color name="background">#e5e5e5</color>
+    <color name="background">#FDFDFE</color>
     <color name="background_floating_material_dark">@color/material_grey_800</color>
     <color name="background_material_dark">@color/material_grey_850</color>
     <color name="background_material_light">@color/material_grey_50</color>
@@ -362,4 +362,14 @@
     <color name="yellow_A200">#ffff00</color>
     <color name="yellow_A400">#ffea00</color>
     <color name="yellow_A700">#ffd600</color>
+
+    <color name="grey_3">#f7f7f7</color>
+    <color name="grey_5">#f2f2f2</color>
+    <color name="grey_10">#e6e6e6</color>
+    <color name="grey_20">#cccccc</color>
+    <color name="grey_40">#999999</color>
+    <color name="grey_60">#666666</color>
+    <color name="grey_80">#37474F</color>
+    <color name="grey_90">#263238</color>
+    <color name="whiteTransparentHalf" />
 </resources>

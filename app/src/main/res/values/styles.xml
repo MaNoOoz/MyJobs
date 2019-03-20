@@ -1,7 +1,7 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
@@ -40,7 +40,7 @@
 
     <style name="AppTheme4" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/dark_purple_500</item>
+        <item name="colorPrimary">@color/green_600</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
@@ -51,4 +51,67 @@
         <item name="actionBarTheme"> @style/AppTheme.PopupOverlay</item>
     </style>
 
+
+
+
+
+
+
+
+    <style name="CustoumTextView" >
+        <!-- Customize your theme here. -->
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:fontFamily">@font/cairo_semibold</item>
+        <item name="android:minWidth">200dp</item>
+        <item name="android:padding">5dp </item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_margin">5dp</item>
+        <!--<item name="android:background">@drawable/ball</item>-->
+    </style>
+    <style name="CustoumCheckBox" >
+        <!-- Customize your theme here. -->
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:fontFamily">@font/cairo_semibold</item>
+        <item name="android:padding">5dp </item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:background">@drawable/btn_background</item>
+        <item name="android:buttonTint">@color/white_pressed</item>
+        <item name="android:layout_weight">3</item>
+
+    </style>
+
+    <style name="CustoumButton" >
+        <!-- Customize your theme here. -->
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:fontFamily">@font/cairo_semibold</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:background">@drawable/button_shape</item>
+        <item name="android:buttonTint">@color/green_600</item>
+        <item name="android:layout_weight">3</item>
+
+    </style>
 </resources>

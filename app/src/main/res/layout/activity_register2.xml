@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootView2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/anim"
+    android:orientation="vertical"
+    >
+
+    <ProgressBar
+        android:id="@+id/reg_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/regPageLogo"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="64dp"
+        android:contentDescription="@string/login_logo_desc"
+        android:maxHeight="120dp"
+        app:srcCompat="@drawable/search"
+
+        />
+
+    <EditText
+        android:id="@+id/reg_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/color0"
+        android:backgroundTint="@android:color/white"
+        android:ems="10"
+        android:fontFamily="@font/cairo_semibold"
+        android:gravity="center"
+        android:hint="@string/Email"
+        android:inputType="textEmailAddress"
+        android:maxHeight="50dp"
+        android:padding="16dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@color/whiteTransparentHalf"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/reg_confirm_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/color0"
+        android:backgroundTint="@android:color/white"
+        android:ems="10"
+        android:fontFamily="@font/cairo_semibold"
+        android:gravity="center"
+        android:hint="@string/Password"
+        android:inputType="textPassword"
+
+        android:maxHeight="50dp"
+        android:padding="16dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@color/whiteTransparentHalf"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/reg_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/color0"
+        android:backgroundTint="@android:color/white"
+        android:ems="10"
+        android:fontFamily="@font/cairo_semibold"
+        android:gravity="center"
+        android:hint="@string/Password"
+        android:inputType="textPassword"
+        android:maxHeight="50dp"
+        android:padding="16dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@color/whiteTransparentHalf"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/reg_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/all_rounded"
+        android:fontFamily="@font/cairo_semibold"
+        android:gravity="center"
+        android:minWidth="100dp"
+        android:minHeight="50dp"
+        android:padding="16dp"
+        android:text="@string/Register"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/reg_login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/all_rounded"
+        android:fontFamily="@font/cairo_semibold"
+        android:gravity="center"
+        android:minWidth="100dp"
+        android:minHeight="50dp"
+        android:padding="16dp"
+        android:text="@string/login"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+</LinearLayout>

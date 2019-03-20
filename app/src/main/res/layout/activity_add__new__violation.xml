@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/df"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green_600"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="3dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@color/green_800"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <ProgressBar
+                        android:id="@+id/new_post_progress"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:indeterminate="true"
+                        android:visibility="invisible"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/all_rounded"
+                        android:minHeight="60dp"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/mName"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/cairo_semibold"
+                            android:gravity="center"
+                            android:hint="إسم المحل"
+                            android:textAlignment="center"
+                            android:textColor="@color/green_700"
+                            android:textColorHint="@color/green_700"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:id="@+id/imageView"
+                            android:layout_width="60dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:tint="@android:color/darker_gray"
+                            app:srcCompat="@drawable/ic_autorenew_black_24dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/all_rounded"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/mGroupDesc"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/cairo_semibold"
+                            android:gravity="right"
+                            android:hint="وصف المخالفة"
+                            android:maxLines="3"
+                            android:textAlignment="center"
+                            android:textColor="@color/green_700"
+                            android:textColorHint="@color/green_700"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="60dp"
+                            android:layout_height="40dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:tint="@android:color/darker_gray"
+                            app:srcCompat="@drawable/ic_autorenew_black_24dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/all_rounded"
+                        android:minHeight="60dp"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/mGroupLink"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/cairo_semibold"
+                            android:gravity="right"
+                            android:hint="رقم المحل"
+                            android:textAlignment="center"
+                            android:textColor="@color/green_700"
+                            android:textColorHint="@color/green_700"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:id="@+id/imageView4"
+                            android:layout_width="60dp"
+                            android:layout_height="40dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:scaleType="fitCenter"
+                            android:tint="@android:color/darker_gray"
+                            app:srcCompat="@drawable/ic_autorenew_black_24dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/all_rounded"
+                        android:minHeight="60dp"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/mGroupUserName"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/cairo_semibold"
+                            android:gravity="right"
+                            android:hint=" اسم المخالف"
+                            android:textAlignment="center"
+                            android:textColor="@color/green_700"
+                            android:textColorHint="@color/green_700"
+                            android:textSize="14sp">
+
+                        </EditText>
+
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="60dp"
+                            android:layout_height="40dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:scaleType="fitCenter"
+                            android:tint="@android:color/darker_gray"
+                            app:srcCompat="@drawable/ic_autorenew_black_24dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/all_rounded"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            style="@style/CustoumTextView"
+                            android:gravity="center"
+                            android:text="إختر فئة المخالفة "
+                            android:textAllCaps="false"
+                            android:textColor="@color/green_700"
+                            android:textSize="12sp" />
+
+                        <Spinner
+                            android:id="@+id/spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:background="@color/green"
+                            android:textAlignment="center" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:background="@drawable/all_rounded"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txt"
+                            style="@style/CustoumTextView"
+                            android:gravity="center"
+                            android:text="إختر الغرامة"
+                            android:textAllCaps="false"
+                            android:textColor="@color/green_700"
+                            android:textSize="12sp" />
+
+                        <Spinner
+                            android:id="@+id/spinnerCity"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:background="@color/green"
+                            android:textAlignment="center" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/all_rounded"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            style="@style/CustoumTextView"
+                            android:layout_weight="1"
+                            android:lineSpacingExtra="14sp"
+                            android:text="إضافة صورة "
+                            android:textAllCaps="false"
+                            android:textColor="@color/green_600"
+                            android:textColorHint="@color/green_700" />
+
+                        <ImageView
+                            android:id="@+id/addImg"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/ic_add_circle_white_36dp"
+                            android:backgroundTint="@color/green_600" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/mAddToDatabase"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/green_600"
+                        android:fontFamily="@font/cairo_semibold"
+                        android:gravity="center"
+                        android:text="Submit"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

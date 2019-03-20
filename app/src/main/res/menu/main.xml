@@ -9,13 +9,25 @@
         <!--android:title="@string/all_users" />-->
     <item
         android:id="@+id/so"
-        android:icon="@android:drawable/ic_menu_revert"
-        android:title="@string/signout" />
+        android:icon="@drawable/ic_arrow_back_black_24dp"
+        android:title="@string/signout"
+        />
     <item
-        android:id="@+id/nav_fav"
-        android:icon="@android:drawable/star_off"
-        android:title="@string/fav"
+        android:id="@+id/si"
+        android:icon="@drawable/ic_arrow_forward_black_24dp"
+        android:title="@string/signin" />
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_person"
+        android:title="@string/profile"
         app:showAsAction="withText" />
+
+    <!--<item-->
+        <!--android:id="@+id/profile_activty"-->
+        <!--android:icon="@android:drawable/star_off"-->
+        <!--android:title="@string/profile"-->
+        <!--app:showAsAction="withText" />-->
+
     <!--<item-->
         <!--android:id="@+id/seting"-->
         <!--android:icon="@android:drawable/ic_menu_manage"-->
@@ -24,16 +36,16 @@
     <group >
         <item
             android:id="@+id/share_app"
-            android:icon="@drawable/ic_menu_share"
+            android:icon="@drawable/ic_share_black_24dp"
             android:title="@string/share" />
         <item
             android:id="@+id/nav_about"
-            android:icon="@android:drawable/ic_menu_help"
+            android:icon="@drawable/ic_stack_menu"
             android:title="@string/about"
             app:showAsAction="withText" />
         <item
             android:id="@+id/nav_apps"
-            android:icon="@android:drawable/stat_notify_sync"
+            android:icon="@drawable/ic_autorenew_black_24dp"
             android:title="@string/myApps" />
     </group>
 

@@ -1,6 +1,6 @@
 <resources>
-    <string name="app_name"> My Jobs</string>
-    <string name="app_name_short">My Jobs</string>
+    <string name="app_name"> تطبيق المراقبين </string>
+    <string name="app_name_short">تطبيق المراقبين</string>
     <string name="tap1"> Search</string>
     <string name="tap2"> My Links</string>
     <string name="tap3" translatable="false"> MyMap</string>
@@ -16,8 +16,13 @@
     <string name="default_name" translatable="false">Display Name</string>
     <string name="default_status" translatable="false">Hi am Online</string>
     <string name="all_users" translatable="false">All Users</string>
+    <string name="signin" translatable="false">SignIn</string>
     <string name="signout">SignOut</string>
+
     <string name="fav">Favorite</string>
+    <string name="violationNew" translatable="false">مخالفة جديدة</string>
+    <string name="profile">Profile</string>
+
     <string name="setting">Setting</string>
     <string name="share">Share</string>
     <string name="action_search">search</string>
@@ -38,6 +43,65 @@
 
     <string name="info" translatable="false">info</string>
     <string name="title_activity_maps">Map</string>
+    <string name="login_successful">login_successful</string>
+    <string name="user_exist">user_exit</string>
+    <string name="auth_failed">auth_failed</string>
+    <string name="google_status_fmt"><![CDATA[<string name=\"google_status_fmt\">Google User: %s</string>]]></string>
+    <string name="cridt">
+        This App Made By Yaman AlKhateeb You Can Contact Me At My Email manoo.sar@gmail.com
+         the app is free and open source \n check the source From here
+                https://goo.gl/zKhj8Q
+    </string>
+    <string name="description_rate">If You Like The App Please Rate Us On Google play</string>
 
+    <string name="bottom_home_text">الرئيسية</string>
+    <string name="bottom_notification_text">المخالفات</string>
+    <string name="bottom_ac_text">اللوائح </string>
+    <string name="login_logo_desc" />
+    <string name="email_hint" />
+    <string name="reg_confirm_pass_text" />
+    <string name="reg_pass_text" />
+    <string name="reg_btn" />
+    <string name="reg_login_text" />
+    <string name="setup_btn_name_text">asdasd</string>
+    <string name="setup_name_hint_text">asdgggg</string>
+
+    <string name="value_any_category2" translatable="false">جميع الفئات</string>
+
+    <array name="mListOfCatagories2">
+        <item>@string/value_any_category2</item>
+        <item>الرياضة</item>
+        <item>وظائف</item>
+        <item>التعليم</item>
+        <item>التقنية</item>
+        <item>الصحة</item>
+        <item>البيع والشراء</item>
+        <item>السياسة</item>
+        <item>العقارات</item>
+        <item>اسلامية</item>
+        <item>العاب</item>
+        <item>ريادة اعمال</item>
+        <item>نكت</item>
+        <item>الصور</item>
+        <item>الإنمي</item>
+        <item>غير مصنف</item>
+    </array>
+
+
+    <array name="countries">
+        <item>جميع الدول</item>
+        <item>السعودية</item>
+        <item>الكويت</item>
+        <item>البحرين</item>
+        <item>الامارات</item>
+        <item>اليمن</item>
+        <item>العراق</item>
+        <item>قطر</item>
+        <item>عمان</item>
+        <item>المغرب</item>
+        <item>مصر</item>
+        <item>سوريا</item>
+        <item>بلد آخر</item>
+    </array>
 
 </resources>

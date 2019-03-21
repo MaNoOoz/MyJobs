@@ -103,33 +103,38 @@
                     android:textSize="18sp" />
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
+
                     android:layout_marginTop="@dimen/spacing_large"
                     android:background="@drawable/btn_background"
                     android:gravity="center"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView3"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Sign In "
-                        android:textAlignment="textStart"
-
-
-                        android:textAppearance="@style/TextAppearance.AppCompat" />
+                    android:orientation="horizontal"
+                    android:padding="10dp">
 
                     <TextView
                         android:id="@+id/toLogin"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Already have an Account ? "
+                        android:text=" have an Account ? "
+
+
                         android:textAlignment="center"
-                        android:textAppearance="@style/TextAppearance.AppCompat" />
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                        android:textColor="@color/amber_50" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        style="@style/TextAppearance.MaterialComponents.Headline6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="Sign In "
+                        android:textAlignment="textStart"
+
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                        android:textColor="@color/amber_500"
+                        android:textStyle="bold" />
 
                 </LinearLayout>
 

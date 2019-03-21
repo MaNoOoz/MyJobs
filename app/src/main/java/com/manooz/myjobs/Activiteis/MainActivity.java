@@ -20,9 +20,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.firestore.FirebaseFirestore;
+//import com.google.firebase.auth.FirebaseAuth;
+//import com.google.firebase.auth.FirebaseUser;
+//import com.google.firebase.firestore.FirebaseFirestore;
 import com.manooz.jobs_search_engine_material.R;
 import com.manooz.myjobs.Fragments.HomeFragment;
 import com.manooz.myjobs.Fragments.ProfileFragment;
@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
 
 //    ===========================================================================================
 
-    private FirebaseAuth mAuth;
+//    private FirebaseAuth mAuth;
     private HomeFragment homeFragment;
     private ProfileFragment profileFragment;
     private Main_Fragment mWebViewFragment;
@@ -55,8 +55,8 @@ public class MainActivity extends AppCompatActivity {
 
     private RecyclerView recyclerView;
     private String current_user_id;
-    private FirebaseFirestore firebaseFirestore;
-    private FirebaseUser currentUser;
+//    private FirebaseFirestore firebaseFirestore;
+//    private FirebaseUser currentUser;
 //    private WebsiteAdapter websiteAdapter;
     private NavigationView nav_view;
 
@@ -68,9 +68,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        mAuth = FirebaseAuth.getInstance();
-        firebaseFirestore = FirebaseFirestore.getInstance();
-        currentUser = FirebaseAuth.getInstance().getCurrentUser();
+//        mAuth = FirebaseAuth.getInstance();
+//        firebaseFirestore = FirebaseFirestore.getInstance();
+//        currentUser = FirebaseAuth.getInstance().getCurrentUser();
 
 
         initToolbar();
@@ -150,46 +150,46 @@ public class MainActivity extends AppCompatActivity {
                     new Main_Fragment()).commit();
 
 
-        if (mAuth.getCurrentUser() != null) {
-            bottomNavigationView = findViewById(R.id.bnv);
-            bottomNavigationView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
-
-
-            bottomNavigationView.setOnNavigationItemSelectedListener(item -> {
-                Fragment selectedFragment = null;
-                switch (item.getItemId()) {
-
-                    case R.id.bottom_action_home:
-                        selectedFragment = new HomeFragment();
-                        Toast.makeText(this, "Hi", Toast.LENGTH_SHORT).show();
-                        break;
-
-                    case R.id.profile:
-                        selectedFragment = new ProfileFragment();
-                        break;
-
-                    case R.id.search:
-                        selectedFragment = new Main_Fragment();
-                        break;
-
-
-                }
-                if (selectedFragment != null) {
-                    getSupportFragmentManager().beginTransaction().replace(R.id.main_container,
-                            selectedFragment).commit();
-                } else {
-                    Toast.makeText(MainActivity.this, "selectedFragment is Null", Toast.LENGTH_SHORT).show();
-                }
-                return true;
-
-
-            });
-
-
-        }
+//        if (mAuth.getCurrentUser() != null) {
+//            bottomNavigationView = findViewById(R.id.bnv);
+//            bottomNavigationView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+//
+//
+//            bottomNavigationView.setOnNavigationItemSelectedListener(item -> {
+//                Fragment selectedFragment = null;
+//                switch (item.getItemId()) {
+//
+//                    case R.id.bottom_action_home:
+//                        selectedFragment = new HomeFragment();
+//                        Toast.makeText(this, "Hi", Toast.LENGTH_SHORT).show();
+//                        break;
+//
+//                    case R.id.profile:
+//                        selectedFragment = new ProfileFragment();
+//                        break;
+//
+//                    case R.id.search:
+//                        selectedFragment = new Main_Fragment();
+//                        break;
+//
+//
+//                }
+//                if (selectedFragment != null) {
+//                    getSupportFragmentManager().beginTransaction().replace(R.id.main_container,
+//                            selectedFragment).commit();
+//                } else {
+//                    Toast.makeText(MainActivity.this, "selectedFragment is Null", Toast.LENGTH_SHORT).show();
+//                }
+//                return true;
+//
+//
+//            });
+//
+//
+//        }
     }
 
-    // ========================================    Navigation ============================================= \\
+    // ========================================    Navigation      ============================================= \\
 
 
     private void initNavigationMenu() {
@@ -229,16 +229,16 @@ public class MainActivity extends AppCompatActivity {
         CircularImageView avatar = (CircularImageView) navigation_header.findViewById(R.id.avatar);
 
 
-        if (currentUser != null) {
-            current_user_id = currentUser.getDisplayName();
-            email.setText(currentUser.getEmail());
-            avatar.setImageResource(R.drawable.album2);
-
-            name.setText(current_user_id);
-            email.setText(currentUser.getEmail());
-            avatar.setImageResource(R.drawable.album2);
-
-        }
+//        if (currentUser != null) {
+//            current_user_id = currentUser.getDisplayName();
+//            email.setText(currentUser.getEmail());
+//            avatar.setImageResource(R.drawable.album2);
+//
+//            name.setText(current_user_id);
+//            email.setText(currentUser.getEmail());
+//            avatar.setImageResource(R.drawable.album2);
+//
+//        }
 
 
 //        (navigation_header.findViewById(R.id.bt_account)).setOnClickListener(new View.OnClickListener() {
@@ -267,19 +267,19 @@ public class MainActivity extends AppCompatActivity {
 
             switch (item.getItemId()) {
                 case R.id.so:
-                    mAuth.getCurrentUser();
-                    if (currentUser != null) {
-                        mAuth.signOut();
-                        Toast.makeText(this, currentUser + " " + "Are Signed Out ", Toast.LENGTH_SHORT).show();
-                        Intent s = new Intent(getApplicationContext(), StartActivity.class);
-                        startActivity(s);
-                        return;
-                    }
+//                    mAuth.getCurrentUser();
+//                    if (currentUser != null) {
+//                        mAuth.signOut();
+//                        Toast.makeText(this, currentUser + " " + "Are Signed Out ", Toast.LENGTH_SHORT).show();
+//                        Intent s = new Intent(getApplicationContext(), StartActivity.class);
+//                        startActivity(s);
+//                        return;
+//                    }
                 case R.id.si: {
-                    Toast.makeText(this, currentUser + " " + "Are Not Null  ", Toast.LENGTH_SHORT).show();
-                    Intent ss = new Intent(getApplicationContext(), LoginActivity.class);
-                    startActivity(ss);
-                    return;
+//                    Toast.makeText(this, currentUser + " " + "Are Not Null  ", Toast.LENGTH_SHORT).show();
+//                    Intent ss = new Intent(getApplicationContext(), LoginActivity.class);
+//                    startActivity(ss);
+//                    return;
 
                 }
 

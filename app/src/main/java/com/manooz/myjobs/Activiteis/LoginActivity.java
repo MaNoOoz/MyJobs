@@ -2,7 +2,6 @@ package com.manooz.myjobs.Activiteis;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Patterns;
@@ -14,23 +13,18 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.material.textfield.TextInputLayout;
-import com.google.firebase.auth.AuthResult;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.auth.UserProfileChangeRequest;
-import com.manooz.jobs_search_engine_material.R;
-
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import com.google.android.material.textfield.TextInputLayout;
+import com.manooz.jobs_search_engine_material.R;
+
 public class LoginActivity extends AppCompatActivity {
 
-    public UserProfileChangeRequest userProfileChangeRequest;
+//    public UserProfileChangeRequest userProfileChangeRequest;
     private Button btnLogIn;
     private TextInputLayout inputEmail, inputPass;
-    private FirebaseAuth mAuth;
+//    private FirebaseAuth mAuth;
     private Toolbar toolbar;
     private LinearLayout toRigsterText;
     private TextView forgetPass;
@@ -50,7 +44,7 @@ public class LoginActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
 
-        mAuth = FirebaseAuth.getInstance();
+//        mAuth = FirebaseAuth.getInstance();
 
 
         btnLogIn.setOnClickListener(new View.OnClickListener() {

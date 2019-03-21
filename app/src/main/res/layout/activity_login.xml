@@ -64,7 +64,7 @@
                         android:hint="@string/Email"
                         android:inputType="textEmailAddress"
 
-                        android:textColorHint="@color/amber_50" />
+                        android:textColorHint="@color/green_600" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -116,9 +116,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/spacing_large"
-                    android:background="@color/colorAccent"
+                    android:background="@drawable/btn_background"
                     android:gravity="center"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+
+                    >
 
                     <TextView
                         android:layout_width="wrap_content"

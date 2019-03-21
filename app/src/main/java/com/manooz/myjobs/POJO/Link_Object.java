@@ -1,6 +1,6 @@
 package com.manooz.myjobs.POJO;
 
-import com.google.firebase.database.Exclude;
+//import com.google.firebase.database.Exclude;
 
 
 // Created by MaNoOoz on 1/1/2018.
@@ -23,7 +23,7 @@ public class Link_Object {
         this.key = key;
     }
 
-    @Exclude
+//    @Exclude
     public String getKey() {
         return key;
     }

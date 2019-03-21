@@ -5,7 +5,7 @@
 
     <item
         android:id="@+id/bottom_action_home"
-        android:icon="@drawable/ic_person"
+        android:icon="@drawable/ic_web_asset_white_36dp"
         android:title="@string/bottom_home_text" />
     <item
         android:id="@+id/search"

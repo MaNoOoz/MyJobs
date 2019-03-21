@@ -1,23 +1,12 @@
 package com.manooz.myjobs.Activiteis;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.ActionBar;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-import androidx.constraintlayout.widget.ConstraintLayout;
-
-import android.content.ContentResolver;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.os.Handler;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.util.Log;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.webkit.MimeTypeMap;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -26,29 +15,16 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.Spinner;
 import android.widget.Toast;
-
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.firestore.CollectionReference;
-import com.google.firebase.firestore.FirebaseFirestore;
-import com.google.firebase.storage.FirebaseStorage;
-import com.google.firebase.storage.OnProgressListener;
-import com.google.firebase.storage.StorageReference;
-import com.google.firebase.storage.StorageTask;
-import com.google.firebase.storage.UploadTask;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import com.manooz.jobs_search_engine_material.R;
 import com.manooz.myjobs.POJO.New_Violation_Object;
 import com.squareup.picasso.Picasso;
 import com.theartofdev.edmodo.cropper.CropImage;
 import com.theartofdev.edmodo.cropper.CropImageView;
-
 import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
 
 public class Add_New_Violation extends AppCompatActivity {
 
@@ -58,9 +34,9 @@ public class Add_New_Violation extends AppCompatActivity {
 
         // Storage Firebase
         private Uri postImageUri;
-        private StorageReference mStorageRef    = FirebaseStorage.getInstance().getReference("uploads");
-        private DatabaseReference mDatabaseRef  = FirebaseDatabase.getInstance().getReference("uploads");
-        private StorageTask storageTask;
+//        private StorageReference mStorageRef    = FirebaseStorage.getInstance().getReference("uploads");
+//        private DatabaseReference mDatabaseRef  = FirebaseDatabase.getInstance().getReference("uploads");
+//        private StorageTask storageTask;
         //
         public String item,item2;
         int mNumOfRatings,mNumOfLikes,mNumOfComments,mNumOfViews;
@@ -170,7 +146,7 @@ public class Add_New_Violation extends AppCompatActivity {
             Toolbar toolbar = findViewById(R.id.toolbar);
             setSupportActionBar(toolbar);
             toolbar.setTitleTextColor(getColor(R.color.white));
-            toolbar.setBackgroundColor(getResources().getColor(R.color.green_800));
+//            toolbar.setBackgroundColor(getResources().getColor(R.color.green_800));
             toolbar.setNavigationIcon(R.drawable.ic_arrow_back_black_24dp);
 
             ActionBar ab = getSupportActionBar();
@@ -186,17 +162,17 @@ public class Add_New_Violation extends AppCompatActivity {
                 public boolean onMenuItemClick(MenuItem item) {
                     switch (item.getItemId()) {
                         case R.id.save:
-                            if (storageTask !=null && storageTask.isInProgress()){
-                                Toast.makeText(Add_New_Violation.this, " Saved", Toast.LENGTH_SHORT).show();
-                                Log.d(" TAG ", " Clicked");
-
-                            }else {
-
-//                                uploadFile();
-                                Toast.makeText(Add_New_Violation.this, "TODO ... ", Toast.LENGTH_SHORT).show();
-
-
-                            }
+//                            if (storageTask !=null && storageTask.isInProgress()){
+//                                Toast.makeText(Add_New_Violation.this, " Saved", Toast.LENGTH_SHORT).show();
+//                                Log.d(" TAG ", " Clicked");
+//
+//                            }else {
+//
+////                                uploadFile();
+//                                Toast.makeText(Add_New_Violation.this, "TODO ... ", Toast.LENGTH_SHORT).show();
+//
+//
+//                            }
                     }
                     return false;
                 }

@@ -10,16 +10,10 @@ import android.widget.ImageButton;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.firestore.FirebaseFirestore;
-import com.google.firebase.storage.StorageReference;
-import com.manooz.jobs_search_engine_material.R;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
-import java.util.Objects;
+import com.manooz.jobs_search_engine_material.R;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
@@ -33,14 +27,14 @@ public class SetupActivity extends AppCompatActivity {
     private EditText setupName;
     private Button save_user_setting;
     private ProgressBar setupProgress;
-    private StorageReference storageReference;
-    private FirebaseFirestore firebaseFirestore;
+//    private StorageReference storageReference;
+//    private FirebaseFirestore firebaseFirestore;
     private Bitmap compressedImageFile;
     private TextView usernameDispaly;
     private RecyclerView allPhotos;
     private String uid;
 
-    private FirebaseUser currentUser;
+//    private FirebaseUser currentUser;
     private String current_user_id;
 
 
@@ -51,7 +45,7 @@ public class SetupActivity extends AppCompatActivity {
         setContentView(R.layout.profile_layout);
 
 
-        current_user_id = Objects.requireNonNull(FirebaseAuth.getInstance().getCurrentUser()).getUid();
+//        current_user_id = Objects.requireNonNull(FirebaseAuth.getInstance().getCurrentUser()).getUid();
 
         setupImage = findViewById(R.id.setup_image);
 

@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
-import com.google.firebase.auth.FirebaseAuth;
+//import com.google.firebase.auth.FirebaseAuth;
 import com.manooz.jobs_search_engine_material.R;
 
 
@@ -16,7 +16,7 @@ public class StartActivity extends AppCompatActivity {
 
     private static final String TAG = "StartActivity";
 
-    private FirebaseAuth mAuth;
+//    private FirebaseAuth mAuth;
 
     private Button loginBtn, createBtn,startBtn;
 //    private GoogleSignInClient mGoogleSignInClient;

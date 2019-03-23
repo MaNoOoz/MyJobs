@@ -12,7 +12,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:scaleType="centerCrop"
-        android:src="@color/green_600" />
+        android:src="@color/green_400" />
 
     <com.mikhaellopez.circularimageview.CircularImageView
         android:id="@+id/avatar"
@@ -32,7 +32,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_margin="@dimen/spacing_large"
-        android:gravity="center_vertical"
+        android:baselineAligned="false" android:gravity="center_vertical"
         android:orientation="horizontal">
 
         <LinearLayout

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/df"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -54,6 +53,7 @@
                         android:layout_height="wrap_content"
                         android:indeterminate="true"
                         android:visibility="invisible"
+                        android:background="@color/white"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent" />
 
@@ -202,56 +202,68 @@
                         android:layout_margin="5dp"
                         android:background="@drawable/all_rounded"
                         android:gravity="center"
-                        android:orientation="vertical">
+                        android:orientation="horizontal">
 
-                        <TextView
-                            android:id="@+id/textView3"
-                            style="@style/CustoumTextView"
-                            android:gravity="center"
-                            android:text="إختر فئة المخالفة "
-                            android:textAllCaps="false"
-                            android:textColor="@color/green_700"
-                            android:textSize="12sp" />
 
-                        <Spinner
+                        <androidx.appcompat.widget.AppCompatSpinner
                             android:id="@+id/spinner"
+                            style="@style/Spinner"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:layout_weight="1"
-                            android:background="@color/green"
+                            android:backgroundTint="@color/green_500"
                             android:gravity="center"
-                            android:textAlignment="center" />
+                            android:popupBackground="@color/green_400"
+                            android:textAlignment="center"
+                            android:textDirection="rtl"
+                            android:visibility="visible" />
 
+                        <TextView
+                            android:id="@+id/textView3"
+                            style="@style/CustoumTextView"
+                            android:layout_weight="1"
+                            android:text="إختر فئة المخالفة "
+                            android:textColor="@color/green_700"
+                            android:textSize="12sp"
+
+
+                            />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
+                        android:layout_height="50dp"
                         android:layout_margin="5dp"
                         android:background="@drawable/all_rounded"
                         android:gravity="center"
-                        android:orientation="vertical">
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
 
-                        <TextView
-                            android:id="@+id/txt"
-                            style="@style/CustoumTextView"
-                            android:gravity="center"
-                            android:text="إختر الغرامة"
-                            android:textAllCaps="false"
-                            android:textColor="@color/green_700"
-                            android:textSize="12sp" />
-
-                        <Spinner
+                        <androidx.appcompat.widget.AppCompatSpinner
                             android:id="@+id/spinnerCity"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:layout_weight="1"
-                            android:background="@color/green"
                             android:gravity="center"
-                            android:textAlignment="center" />
+                            style="@style/Widget.AppCompat.Spinner.Underlined"
+                            android:backgroundTint="@color/green_500"
+                            android:popupBackground="@color/green_400"
+
+                            android:textAlignment="center"
+                            android:textDirection="rtl"
+                            android:visibility="visible"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/txt"
+                            style="@style/CustoumTextView"
+                            android:layout_weight="1"
+                            android:text="إختر فئة  الغرامة"
+                            android:textColor="@color/green_700"
+                            android:textSize="12sp" />
 
                     </LinearLayout>
 

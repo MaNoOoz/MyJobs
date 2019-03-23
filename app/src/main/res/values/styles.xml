@@ -1,65 +1,30 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
-        <item name="android:statusBarColor" tools:targetApi="lollipop"> @color/green_600</item>
+        <item name="colorPrimaryDark">@color/green_400</item>
+        <item name="colorAccent">@color/green_400</item>
 
     </style>
+    <style name="AppThemeCutout" parent="AppTheme">
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="android:windowEnterTransition">@android:transition/slide_right</item>
+        <item name="android:windowExitTransition">@android:transition/slide_left</item>
 
-    <style name="AppTheme.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-        <item name="actionBarTheme"> @style/AppTheme.PopupOverlay</item>
-    </style>
-
-
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" >
-    <item name="colorPrimary">@color/cyan_200</item>
-    </style>
-    <style name="AppTheme2">
-        <item name="windowActionBar">true</item>
-        <item name="windowNoTitle">true</item>
-        <item name="actionBarTheme"> @style/AppTheme.PopupOverlay</item>
-    </style>
-
-    <style name="AppTheme3" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/green_600</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
-    </style>
-    <style name="AppTheme3.NoActionBar">
-        <item name="windowActionBar">true</item>
-        <item name="windowNoTitle">true</item>
-        <item name="android:statusBarColor" tools:targetApi="lollipop"> @color/green_600</item>
-        <item name="actionBarTheme"> @style/AppTheme.PopupOverlay</item>
-    </style>
-    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
-
-    <style name="AppTheme4" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/green_600</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
-    </style>
-    <style name="AppTheme4.NoActionBar">
-        <item name="windowActionBar">true</item>
-        <item name="windowNoTitle">true</item>
-        <item name="android:statusBarColor" tools:targetApi="lollipop"> @color/colorPrimary</item>
-        <item name="actionBarTheme"> @style/AppTheme.PopupOverlay</item>
     </style>
 
 
 
-
-
-
-
-
+    <style name="Spinner" parent="@style/Widget.AppCompat.Spinner.Underlined">
+        <item name="android:paddingStart">0dp</item>
+        <item name="android:paddingEnd">0dp</item>
+        <item name="android:textColor">@color/green_400</item>
+        <item name="android:backgroundTint">@color/green_400</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    
     <style name="CustoumTextView" >
         <!-- Customize your theme here. -->
         <item name="android:layout_width">wrap_content</item>

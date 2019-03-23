@@ -5,6 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/teal_600"
-    tools:context="com.manooz.myjobs.Activiteis.MainActivity">
+    tools:context="com.manooz.roya_app.Activiteis.MainActivity">
 
 </FrameLayout>

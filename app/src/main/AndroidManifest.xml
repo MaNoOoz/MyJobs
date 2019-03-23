@@ -13,21 +13,22 @@
 
     <application
         android:allowBackup="true"
+        android:name="com.manooz.roya_app.Helpers.App"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/Theme.MaterialComponents.NoActionBar"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name="com.manooz.myjobs.Activiteis.Add_New_Violation"></activity>
-        <!-- <meta-data -->
+        <activity android:name="com.manooz.roya_app.Activiteis.admin_Activity"></activity>
+        <activity android:name="com.manooz.roya_app.Activiteis.Add_New_Violation" /> <!-- <meta-data -->
         <!-- android:name="com.google.android.gms.version" -->
         <!-- android:value="@integer/google_play_services_version" /> -->
         <!-- <meta-data -->
         <!-- android:name="com.google.android.geo.API_KEY" -->
         <!-- android:value="@string/google_maps_key" /> -->
         <activity
-            android:name="com.manooz.myjobs.Activiteis.StartActivity"
+            android:name="com.manooz.roya_app.Activiteis.StartActivity"
             android:label="@string/app_name_short"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.MaterialComponents.NoActionBar">
@@ -37,13 +38,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
             android:theme="@style/Base.Theme.AppCompat" />
-
         <activity
-            android:name="com.manooz.myjobs.Activiteis.MainActivity"
+            android:name="com.manooz.roya_app.Activiteis.MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.MaterialComponents.NoActionBar"
             android:windowSoftInputMode="stateHidden">
@@ -62,32 +61,17 @@
         <!-- </intent-filter> -->
         <!-- </activity> -->
         <activity
-            android:name="com.manooz.myjobs.Activiteis.RegisterActivity"
-            android:parentActivityName="com.manooz.myjobs.Activiteis.StartActivity"
+            android:name="com.manooz.roya_app.Activiteis.RegisterActivity"
+            android:parentActivityName="com.manooz.roya_app.Activiteis.StartActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.MaterialComponents.NoActionBar"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name="com.manooz.myjobs.Activiteis.LoginActivity"
-            android:parentActivityName="com.manooz.myjobs.Activiteis.StartActivity"
+            android:name="com.manooz.roya_app.Activiteis.LoginActivity"
+            android:parentActivityName="com.manooz.roya_app.Activiteis.StartActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.MaterialComponents.NoActionBar"
-            android:windowSoftInputMode="stateHidden" /> <!-- <activity -->
-        <!-- android:name=".Main.SettingActivity" -->
-        <!-- android:screenOrientation="portrait" -->
-        <!-- android:theme="@style/AppTheme3.NoActionBar" -->
-        <!-- android:windowSoftInputMode="stateHidden" /> -->
-        <!-- <activity -->
-        <!-- android:name="com.theartofdev.edmodo.cropper.CropImageActivity" -->
-        <!-- android:theme="@style/Base.Theme.AppCompat" /> &lt;!&ndash; optional (needed if default theme has no action bar) &ndash;&gt; -->
-        <activity
-            android:name="com.manooz.myjobs.Activiteis.About_Activty"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme4.NoActionBar" />
-        <activity
-            android:name="com.manooz.myjobs.Activiteis.SetupActivity"
-            android:parentActivityName="com.manooz.myjobs.Activiteis.MainActivity"
-            android:screenOrientation="portrait" />
+            android:windowSoftInputMode="stateHidden" />
     </application>
 
 </manifest>
